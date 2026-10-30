@@ -1,0 +1,16 @@
+{
+  "name": "smartcity-360",
+  "version": "1.0.0",
+  "description": "SmartCity 360 — AI-Powered Integrated Urban Management System",
+  "scripts": {
+    "dev": "node run-dev.mjs",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "build:client": "npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "build": "npm run build:client && npm run build:server"
+  },
+  "keywords": ["smart-city", "civic-tech", "urban-management", "ai", "supabase", "react", "express"],
+  "author": "SmartCity 360 Team",
+  "license": "MIT"
+}
