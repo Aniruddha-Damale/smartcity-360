@@ -503,6 +503,8 @@ export const initialSensorDevices: SensorDevice[] = [
   }
 ];
 
+export const initialSensors = initialSensorDevices;
+
 export const initialAnnouncements: Announcement[] = [
   {
     id: 'ann-1',

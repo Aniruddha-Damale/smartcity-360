@@ -52,6 +52,23 @@ app.use((err: any, _req: express.Request, res: express.Response, _next: express.
   });
 });
 
+// Serve frontend static build if present
+import path from 'path';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const clientDist = path.resolve(__dirname, '../../client/dist');
+
+if (fs.existsSync(clientDist)) {
+  app.use(express.static(clientDist));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) return next();
+    res.sendFile(path.join(clientDist, 'index.html'));
+  });
+}
+
 // Start listening
 app.listen(config.port, () => {
   console.log('===========================================================');
