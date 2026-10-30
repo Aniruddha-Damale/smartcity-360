@@ -2,6 +2,8 @@
 
 > **AI-Powered Integrated Urban Management System**
 
+🌐 **Live Demo**: [https://aniruddha-damale.github.io/smartcity-360/](https://aniruddha-damale.github.io/smartcity-360/)
+
 SmartCity 360 is a full-stack civic technology platform connecting citizens, municipal departments, and city leadership. It enables real-time grievance reporting, AI-assisted department triaging, interactive geospatial mapping, IoT sensor monitoring, and data-driven civic administration.
 
 ---
